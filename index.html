@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Geo IP Tracker</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Geo IP Tracker</h1>
-    <div class="user-info">
-      <div class="user-ip"><strong>Your IP:</strong></div>
-    </div>
-    <div class="search-container">
-      <div>
-        <input type="text" id="search-input" class="search-input" placeholder="Search IP Address or Domain">
-        <button id="search-button" class="search-button">Search</button>
-      </div>
-      <div>
-        <button id="reset-button" class="reset-button">Reset</button>
-        <button id="dark-mode-button" class="dark-mode-button">Dark Mode</button>
-      </div>
-    </div>
-    <div id="map"></div>
-  </div>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="app.js"></script>
+<head>
+    <title>Geo IP Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Geo IP Tracker</h1>
+        <div class="user-info">
+            <div class="user-ip"><strong>Your IP:</strong></div>
+        </div>
+        <div class="search-container">
+            <div>
+                <input type="text" id="search-input" class="search-input" placeholder="Search IP Address or Domain">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+            <div>
+                <button id="reset-button" class="reset-button">Reset</button>
+                <button id="dark-mode-button" class="dark-mode-button">Dark Mode</button>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
