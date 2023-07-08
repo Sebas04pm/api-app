@@ -19,6 +19,8 @@ function searchLocation(searchValue) {
         <strong>IP:</strong> ${data.ip}<br>
         <strong>Country:</strong> ${data.location.country}<br>
         <strong>Region:</strong> ${data.location.region}<br>
+        <strong>Lat:</strong> ${data.location.lat}<br>
+        <strong>Lng:</strong> ${data.location.lng}<br>
         <strong>Domain:</strong> ${data.as.domain}<br>
         <strong>Timezone:</strong> ${data.location.timezone}<br>
         <strong>Postal Code:</strong> ${data.location.postalCode}
@@ -29,7 +31,7 @@ function searchLocation(searchValue) {
       map.setView([lat, lng], 13);
     })
     .fail(function() {
-      alert("Unable to find the specified IP Address or Domain.");
+      alert("No se puede encontrar la dirección IP especificada.");
     });
 }
 
